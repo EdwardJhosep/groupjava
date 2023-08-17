@@ -11,6 +11,6 @@ package com.mycompany.operador;
 public class Operador {
 
     public static void main(String[] args) {
-        System.out.println("Hello World!");
+        System.out.println("operador");
     }
 }
