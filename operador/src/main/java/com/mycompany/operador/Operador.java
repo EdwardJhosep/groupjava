@@ -44,5 +44,14 @@ switch (seleccion) {
     case 2:
         resultado = num1 * num2;
         break;
+    case 3:
+        if (num2 != 0) {
+            resultado = num1 / num2;
+        } else {
+            JOptionPane.showMessageDialog(null, "No es posible dividir por cero.");
+            return; // Sale del programa si la división por cero
+        }
+        break;
+    
     }
     }
