@@ -3,7 +3,8 @@
  */
 
 package com.mycompany.operador;
-
+//importamos JOptionPane
+import javax.swing.JOptionPane;
 /**
  *
  * @author USER
@@ -27,5 +28,8 @@ public class Operador {
     opciones,                        // Opciones disponibles
     opciones[0]                      // Opción predeterminada seleccionada
 );
-
+    //solicitamos numeros al usuario 
+    int num1 = Integer.parseInt(JOptionPane.showInputDialog("Ingrese el primer número:"));
+int num2 = Integer.parseInt(JOptionPane.showInputDialog("Ingrese el segundo número:"));
+    }
     }
