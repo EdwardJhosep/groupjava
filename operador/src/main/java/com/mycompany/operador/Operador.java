@@ -19,14 +19,14 @@ public class Operador {
  //Mostramos  la Ventana de Diálogo usando JOptionPane.showOptionDialog():
 
     int seleccion = JOptionPane.showOptionDialog(
-    null,                            // Componente padre (en este caso, ninguno)
-    "Seleccione una operación:",     // Mensaje a mostrar en la ventana
-    "Calculadora",                   // Título de la ventana
-    JOptionPane.DEFAULT_OPTION,      // Tipo de opción predeterminada
-    JOptionPane.QUESTION_MESSAGE,    // Tipo de mensaje (pregunta)
-    null,                            // Icono personalizado (en este caso, ninguno)
-    opciones,                        // Opciones disponibles
-    opciones[0]                      // Opción predeterminada seleccionada
+    null,                            
+    "Seleccione una operación:",     
+    "Calculadora",                   
+    JOptionPane.DEFAULT_OPTION,      
+    JOptionPane.QUESTION_MESSAGE,    
+    null,                            
+    opciones,                        
+    opciones[0]                     
 );
     //solicitamos numeros al usuario 
     int num1 = Integer.parseInt(JOptionPane.showInputDialog("Ingrese el primer número:"));
@@ -49,7 +49,7 @@ switch (seleccion) {
             resultado = num1 / num2;
         } else {
             JOptionPane.showMessageDialog(null, "No es posible dividir por cero.");
-            return; // Sale del programa si la división por cero
+            return; 
         }
         break;
     
