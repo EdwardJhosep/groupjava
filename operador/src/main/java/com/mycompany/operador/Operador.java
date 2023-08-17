@@ -11,6 +11,6 @@ package com.mycompany.operador;
 public class Operador {
 
     public static void main(String[] args) {
-        System.out.println("operador");
+        System.out.println("operador suma ");
     }
 }
