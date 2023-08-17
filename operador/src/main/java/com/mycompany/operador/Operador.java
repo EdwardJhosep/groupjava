@@ -10,7 +10,7 @@ package com.mycompany.operador;
  */
 public class Operador {
 
+    // aqui declaramos el metodo main
     public static void main(String[] args) {
-        System.out.println("operador suma ");
-    }
+
 }
