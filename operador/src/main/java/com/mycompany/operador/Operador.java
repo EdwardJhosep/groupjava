@@ -31,5 +31,18 @@ public class Operador {
     //solicitamos numeros al usuario 
     int num1 = Integer.parseInt(JOptionPane.showInputDialog("Ingrese el primer número:"));
 int num2 = Integer.parseInt(JOptionPane.showInputDialog("Ingrese el segundo número:"));
+//realizacion de operacion 
+int resultado = 0;
+
+switch (seleccion) {
+    case 0:
+        resultado = num1 + num2;
+        break;
+    case 1:
+        resultado = num1 - num2;
+        break;
+    case 2:
+        resultado = num1 * num2;
+        break;
     }
     }
