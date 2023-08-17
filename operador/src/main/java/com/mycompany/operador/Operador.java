@@ -26,7 +26,7 @@ public class Operador {
     JOptionPane.QUESTION_MESSAGE,    
     null,                            
     opciones,                        
-    opciones[0]                     
+    opciones[0]                      
 );
     //solicitamos numeros al usuario 
     int num1 = Integer.parseInt(JOptionPane.showInputDialog("Ingrese el primer número:"));
@@ -35,23 +35,25 @@ int num2 = Integer.parseInt(JOptionPane.showInputDialog("Ingrese el segundo núm
 int resultado = 0;
 
 switch (seleccion) {
-    case 0:
-        resultado = num1 + num2;
-        break;
-    case 1:
-        resultado = num1 - num2;
-        break;
-    case 2:
-        resultado = num1 * num2;
-        break;
-    case 3:
-        if (num2 != 0) {
-            resultado = num1 / num2;
-        } else {
-            JOptionPane.showMessageDialog(null, "No es posible dividir por cero.");
-            return; 
-        }
-        break;
-    
+    case 0 -> resultado = num1 + num2;
+    case 1 -> resultado = num1 - num2;
+    case 2 -> resultado = num1 * num2;
+    case 3 -> {
+                if (num2 != 0) {
+                    resultado = num1 / num2;
+                } else {
+                    JOptionPane.showMessageDialog(null, "No es posible dividir por cero.");
+                    return;
+                }
+                // mostraremos el resultado en un cuadro de dialogo
+            }
+      
+
+
+          // mostraremos el resultado en un cuadro de dialogo 
+       }
+
+        String operacion = opciones[seleccion];
+        JOptionPane.showMessageDialog(null, "Resultado de la " + operacion + ": " + resultado);
     }
-    }
+}
